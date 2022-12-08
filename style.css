@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu' url('/assets/fonts/Ubuntu-Regular.ttf');
+}
+@font-face {
+    font-family: 'ubuntu-regular';
+    src: url(/assets/fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: 'ubuntu-bold';
+    src: url(/assets/fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: 'ubuntu-medium';
+    src: url(/assets/fonts/Ubuntu-Medium.ttf);
+}
+
+:root {
+    --Marine-blue: hsl(213,96%,18%);
+    --Purplish-blue: hsl(243,100%,62%);
+    --Pastel-blue:  hsl(228, 100%, 84%);
+    --Light-blue: hsl(206, 94%, 87%);
+    --Strawberry-red: hsl(354, 84%, 57%);
+  }
+
+main {
+    min-height: 100vh;
+    background: var(--Light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#fff;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,.3));
+    border-radius: 2rem;
+    position: relative;
+}
+.sidebar{
+    background-image: url('/assets/images/bg-sidebar-desktop.svg');
+    height: 500px;
+    width: 1000px;
+    align-items: center;
+    /* background-position: center; */
+    /* background-size: 400px 600px; */
+    background-repeat:no-repeat;
+    position:absolute;
+    top: 20px;
+    left: 10px;
+    border-radius: 40px;
+    
+}
+.info{
+    position: relative;
+    top: 50px;
+    left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.info-text{
+    position: relative;
+    left: 70px;
+    top: -20px;
+}
+.circle{
+    background:var(--Purplish-blue);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 3px solid var(--Light-gray);
+    color:var(--Light-gray);
+    text-align: center;
+    padding: 1px;
+    font: 14px Arial, sans-serif;
+    display: block;
+}
+#circleActive{
+    background:var(--Light-blue);
+    height: 25px;
+    width: 25px;        
+    border-radius: 50%;
+    border: 3px solid var(--Light-blue);
+    color:var(--Purplish-blue);
+    text-align: center;
+    padding: 1px;
+    font: 14px Arial, sans-serif;
+}
+.plan{
+    position: relative;
+    top: 50px;
+    left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.plan-text{
+    position: relative;
+    left: 70px;
+    top: -20px;
+}
+.circle2{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background: var(--Light-blue);
+    border: 0px solid transparent;
+    color: var(--Marine-blue);
+    text-align: center;
+    align-self: center;
+    font: 15px ubuntu-regular, san-serif;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+.add-on{
+    position: relative;
+    top: 50px;
+    left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.add-text{
+    position: relative;
+    left: 70px;
+    top: -20px;
+}
+.circle3{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background: var(--Light-blue);
+    border: 0px solid transparent;
+    color: var(--Marine-blue);
+    text-align: center;
+    align-self: center;
+    font: 15px ubuntu-regular, san-serif;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+.summary{
+    position: relative;
+    top: 50px;
+    left: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.summary-text{
+    position: relative;
+    left: 70px;
+    top: -20px;
+}
+.circle4{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background: var(--Light-blue);
+    border: 0px solid transparent;
+    color: var(--Marine-blue);
+    text-align: center;
+    align-self: center;
+    font: 15px ubuntu-regular, san-serif;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+.right-container{
+    position: relative;
+    left: 100px;
+    margin:auto;
+    font-family: 'ubuntu-regular';
+    color: var('--purplish-blue');
+    width: 400px;
+}
+.right-header{
+    position: relative;
+    bottom: 20px;
+}
+.right-header h1{
+    font-family: 'ubuntu-medium';
+}
+.right-header p{
+    color: grey;
+}
+.right-container input {
+    width: 100%;
+    background:transparent;
+    border: 1px #fff solid;
+}
+.right-container button{
+    top: 10px;
+    position: relative;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--Marine-blue);
+    color: white;
+}
+
+
+/* .container{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background:linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,.3));
+    border-radius: 2rem;
+    z-index: 2;
+    position: relative;
+
+}
+
+.left-container {
+      width: 60%;
+      height: inherit;
+      background-image: url('/assets/images/bg-sidebar-desktop.svg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      border-radius: 2rem;
+      left:10px;
+      top: 10px;
+      position: absolute;
+}
+.right-container {
+    right: 20px;
+    top: 100px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+} */
